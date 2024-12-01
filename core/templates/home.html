@@ -1,8 +1,190 @@
 {% extends 'base.html' %}
-
 {% block title %}Home{% endblock %}
-
 {% block content %}
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is the homepage.</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Hero Section -->
+  <section class="py-5 bg-light">
+    <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between">
+      <div class="text-center text-lg-start mb-4 mb-lg-0">
+        <h1 class="display-4 fw-bold">Hi, I'm dev</h1>
+        <p class="lead" style="color: #4a4a4a;">A passionate developer specializing in modern web and software solutions. I Use Django for my development na mainly focus on API development, testing and deployment</p>
+        <button class="btn btn-primary btn-lg">Learn More</button>
+    <div class="d-flex gap-3 mt-3">
+        <a href="https://www.linkedin.com/in/your-profile" class="btn btn-outline-primary rounded-circle">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/your-profile" class="btn btn-outline-dark rounded-circle">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://hashnode.com/@your-profile" class="btn btn-outline-info rounded-circle">
+            <i class="fab fa-hashnode"></i>
+        </a>
+    </div>
+      </div>
+      <div>
+        <img src="../static/images/dev-1.jpeg" alt="Developer Image" class="img-fluid rounded shadow" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">About Me</h2>
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <p class="text-muted">I am a developer with experience in Python, JavaScript, and more. I love building efficient and scalable solutions for real-world problems.</p>
+          <h4>Tech Stack</h4>
+          <div class="d-flex flex-wrap gap-3">
+            <span class="badge bg-primary">Python</span>
+            <span class="badge bg-secondary">React</span>
+            <span class="badge bg-success">Django</span>
+            <span class="badge bg-danger">Bootstrap</span>
+          </div>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-center align-items-center" style="height: 100%;">
+          <div style="max-width: 300px; width: 100%;">
+            <img src="../static/images/dev-image-1.jpg" alt="My Image" class="img-fluid rounded-circle shadow" style="object-fit: cover; width: 100%; height: auto;" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Projects</h2>
+      <div class="row g-4">
+        <!-- Project Card -->
+        <article class="col-md-6 col-lg-4">
+          <div class="card shadow">
+            <img src="../static/images/dev-1.jpeg" class="card-img-top" alt="Project 1" />
+            <div class="card-body">
+              <h5 class="card-title">Farmsight</h5>
+              <p class="card-text">An agricultural website that leverages technology to empower farmers.</p>
+              <div class="d-flex gap-2">
+                <span class="badge bg-primary">Python</span>
+                <span class="badge bg-secondary">React</span>
+              </div>
+              <div class="mt-3">
+                <a href="#" class="btn btn-outline-primary">View Project</a>
+                <a href="#" class="btn btn-outline-secondary">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-6 col-lg-4">
+          <div class="card shadow">
+            <img src="../static/images/dev-1.jpeg" class="card-img-top" alt="Project 1" />
+            <div class="card-body">
+              <h5 class="card-title">Farmsight</h5>
+              <p class="card-text">An agricultural website that leverages technology to empower farmers.</p>
+              <div class="d-flex gap-2">
+                <span class="badge bg-primary">Python</span>
+                <span class="badge bg-secondary">React</span>
+              </div>
+              <div class="mt-3">
+                <a href="#" class="btn btn-outline-primary">View Project</a>
+                <a href="#" class="btn btn-outline-secondary">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </article>
+             </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Blog</h2>
+      <div class="row g-4">
+        <article class="col-md-6 col-lg-4">
+          <div class="card shadow">
+            <img src="../static/images/dev-1.jpeg" class="card-img-top" alt="Blog Post" />
+            <div class="card-body">
+              <h5 class="card-title">Blog Title</h5>
+              <p class="card-text">A brief overview of the blog content goes here...</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-6 col-lg-4">
+            <div class="card shadow">
+              <img src="../static/images/dev-1.jpeg" class="card-img-top" alt="Blog Post" />
+              <div class="card-body">
+                <h5 class="card-title">Blog Title</h5>
+                <p class="card-text">A brief overview of the blog content goes here...</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-6 col-lg-4">
+            <div class="card shadow">
+              <img src="../static/images/dev-1.jpeg" class="card-img-top" alt="Blog Post" />
+              <div class="card-body">
+                <h5 class="card-title">Blog Title</h5>
+                <p class="card-text">A brief overview of the blog content goes here...</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2>Let’s Have a Chat</h2>
+      <p class="text-muted">Interested in working together? Feel free to reach out!</p>
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Me</button>
+    </div>
+  </section>
+
+  <!-- Contact Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Contact Me</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
 {% endblock %}

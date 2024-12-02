@@ -20,7 +20,7 @@ def contact(request):
         email = request.POST['email']
         message = request.POST['message']
         Contact.objects.create(name=name, email=email, message=message)
-        return redirect('home')  # Redirect after submission
+        return redirect('home')
     return render(request, 'contact.html')
 
 from .models import BlogPost

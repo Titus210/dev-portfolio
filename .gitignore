@@ -2,3 +2,5 @@ core/__pycache__/
 myvenv/
 devportfolio/__pycache__/
 core/migrations
+core/views/__pycache__/
+core/utils/__pycache__/

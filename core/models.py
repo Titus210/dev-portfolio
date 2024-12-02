@@ -8,9 +8,11 @@ class Project(models.Model):
     live_link = models.URLField(blank=True, null=True)
     repo_link = models.URLField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
+    image = models.ImageField(upload_to='project_images/', blank=True, null=True)
     
     def __str__(self):
         return self.title
+
 # Skills section
 class Skill(models.Model):
     name = models.CharField(max_length=100)
@@ -35,6 +37,7 @@ class BlogPost(models.Model):
     content = models.TextField()
     author = models.CharField(max_length=100)
     published_at = models.DateTimeField(auto_now_add=True)
+    image = models.ImageField(upload_to='blog_images/', blank=True, null=True)
     
     def __str__(self):
         return self.title

@@ -1,23 +1,23 @@
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="{% url 'home' %}"><i class="fas fa-leaf"></i> MySite</a>
+        <a class="navbar-brand" href="{% url 'home' %}"><i class="fas fa-leaf me-2"></i> Dev Tittoh</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'home' %}"><i class="fas fa-home"></i> Home</a>
+                    <a class="nav-link {% if request.resolver_match.url_name == 'home' %}active text-primary{% endif %}" href="{% url 'home' %}"><i class="fas fa-home me-2"></i> Home</a>
+                </li>
+              
+                <li class="nav-item">
+                    <a class="nav-link {% if request.resolver_match.url_name == 'projects' %}active text-primary{% endif %}" href="{% url 'projects' %}"><i class="fas fa-project-diagram me-2"></i> My Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'about' %}"><i class="fas fa-user"></i> About Me</a>
+                    <a class="nav-link {% if request.resolver_match.url_name == 'blog' %}active text-primary{% endif %}" href="{% url 'blog' %}"><i class="fas fa-user me-2"></i> My Blogs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'projects' %}"><i class="fas fa-project-diagram"></i> Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'contact' %}"><i class="fas fa-envelope"></i> Contact</a>
+                    <a class="nav-link {% if request.resolver_match.url_name == 'contact' %}active text-primary{% endif %}" href="{% url 'contact' %}"><i class="fas fa-envelope me-2"></i> My Contacts</a>
                 </li>
             </ul>
         </div>

@@ -1,6 +1,6 @@
 from django.db import models
 
-# This is a field that includes project 
+# This is a field that includes project (dev projects)
 class Project(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField()
